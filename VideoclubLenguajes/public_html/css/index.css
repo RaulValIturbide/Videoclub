@@ -6,11 +6,37 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Created on : 21 feb 2025, 16:37:06
     Author     : baske
 */
-
+/*Aqui colocaremos el color de fondo que queremos que haya en la pagina principal*/
 body{
 	background-color:grey;
 }
+.Encabezado{
+   display:inline;
+   position:relative;
+   top:-50px;
+    
+}
+.subEncabezado{
+    text-align:center;/*Centra el texto en la pantalla*/
+    padding-bottom: 10px;/*Algo de espacion por abajo para dejar "respirar" el subtitulo(estético)*/
+    
+}
+/*Este selector de clase se usa para gestionar la lista y su contorno*/
 .lista{
+    border:2px solid black; /*El bordeado del texto con tamaño y color*/
+    padding:10px; /*Espacio extra alrededor del texto para dar una mejor impresión estética*/
+    margin: auto; /*Centra automaticamente el objeto en el centro de la pantalla*/
+    width: 400px; /*Este sirve para ajustar el tamaño de la lista y que no se extralimite*/
+    text-align: center; /*Alinea el texto en el centro de la "caja"*/
+    background-color:white; /*Color de fondo de la la lista*/
+}
+/*Selector para controlar el espaciado entre los vinculos para que se vea con una mayor limpieza*/
+li{
     display:inline;
- 
+    margin-bottom: 10px;
+}
+#logo{
+    margin-left:30px;
+    width:100px;
+    height:100px;
 }
