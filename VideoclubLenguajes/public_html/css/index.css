@@ -14,16 +14,21 @@ body{
 a{
     text-decoration: none;  /* Sin subrayado */
     color: black;            /* Color inicial */
-    transition: 0.5s;/*El tiempo que tardará en cambiar de color y estilo cuando el ratón pase por encima*/
+    
 }
 /*Este selector cambiara como se comporta el texto cuando el usuario pase el ratón por encima*/
 a:hover{
+    transition: 0.3s;/*El tiempo que tardará en cambiar de color y estilo cuando el ratón pase por encima*/
     font-weight: 700;/*Pasará a negrita cuando el raton pase por encima*/
     font-family: arial;/*Estilo  al que cambiará el texto cuando pase el raton por encima*/
     color:#FAFAFA;/*Color al que cambiará el texto cuando pase el ratón por encima*/
+    text-decoration: underline;
+}
+a:visited{
+    color:#FAFAFA;
+    
 }
 .Encabezado{
-
     text-align: center;
 }
 /*Este selector de clase se usa para gestionar la lista y su contorno*/

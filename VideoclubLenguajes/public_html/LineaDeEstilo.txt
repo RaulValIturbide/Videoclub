@@ -1,10 +1,18 @@
-Vamos a seguir un patrón de colores durante todas las páginas para aportar cohesión,
-estos dos colores serán: 
+			LINEA DE ESTILO
 
-#019BA5 ->Azul Turquesa
-#FAFAFA ->Blanco nieve
+Participantes del proyecto: Luis Malo y Raúl Val
+
+El objetivo de este texto es establecer las líneas y formatos que hemos de seguir durante todo el 
+trabajo para asegurar una buena cohesión y coherencia durante todas sus partes.
+
+
+Seguiremos un patrón de colores durante todas las páginas para aportar cohesión,
+estos colores serán: 
+
+#019BA5 ->Azul Turquesa --Principalmente para el fondo--
+#FAFAFA ->Blanco nieve 
 --------------------------
-#01A57A	->Verde Esmeralda	I
+#01A57A	->Verde Esmeralda	
 #9BA501 ->Verde Lima
 #D9534F ->Rojo Coral
 #FFAA00 ->Amarillo Mostaza
