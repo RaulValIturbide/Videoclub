@@ -8,18 +8,23 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 */
 /*Aqui colocaremos el color de fondo que queremos que haya en la pagina principal*/
 body{
-	background-color:grey;
+    background-color:#019BA5;
+}
+/*En este selector controlaremos los anchor, es decir, los hipervinculos para saltar a otras páginas*/
+a{
+    text-decoration: none;  /* Sin subrayado */
+    color: black;            /* Color inicial */
+    transition: 0.5s;/*El tiempo que tardará en cambiar de color y estilo cuando el ratón pase por encima*/
+}
+/*Este selector cambiara como se comporta el texto cuando el usuario pase el ratón por encima*/
+a:hover{
+    font-weight: 700;/*Pasará a negrita cuando el raton pase por encima*/
+    font-family: arial;/*Estilo  al que cambiará el texto cuando pase el raton por encima*/
+    color:#FAFAFA;/*Color al que cambiará el texto cuando pase el ratón por encima*/
 }
 .Encabezado{
-   display:inline;
-   position:relative;
-   top:-50px;
-    
-}
-.subEncabezado{
-    text-align:center;/*Centra el texto en la pantalla*/
-    padding-bottom: 10px;/*Algo de espacion por abajo para dejar "respirar" el subtitulo(estético)*/
-    
+
+    text-align: center;
 }
 /*Este selector de clase se usa para gestionar la lista y su contorno*/
 .lista{
@@ -28,15 +33,27 @@ body{
     margin: auto; /*Centra automaticamente el objeto en el centro de la pantalla*/
     width: 400px; /*Este sirve para ajustar el tamaño de la lista y que no se extralimite*/
     text-align: center; /*Alinea el texto en el centro de la "caja"*/
-    background-color:white; /*Color de fondo de la la lista*/
+    background-color:#D9534F; /*Color de fondo de la la lista*/
 }
-/*Selector para controlar el espaciado entre los vinculos para que se vea con una mayor limpieza*/
+/*Selector para controlar los items de la unica lista que hay en la pagina principal*/
 li{
-    display:inline;
+    padding:5px;/*Espacio de separación entre items */
+    display:inline; /*Convierte el elemento en linea para poder trabajar de manera horizontal*/
     margin-bottom: 10px;
 }
+#Nombre_Empresa{
+    position:absolute;
+    display:inline;/*Cambiamos el tipo a display para poder colocar al lado el logo de nuestra "empresa"*/
+}
+#Bienvenida{
+    text-align:center;/*Centra el texto en la pantalla*/
+    padding-bottom: 10px;/*Algo de espacion por abajo para dejar "respirar" el subtitulo(estético)*/
+
+}
+
+/*Selector para controlar la posición del logo*/
 #logo{
-    margin-left:30px;
+    margin-left:300px;
     width:100px;
     height:100px;
 }
