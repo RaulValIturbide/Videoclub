@@ -1,0 +1,79 @@
+• Conjunto de imágenes con un tamaño homogéneo y sin deformar.
+
+
+
+---------------------------------------------------------------------
+
+
+
+
+
+
+• Imagen en la página index.html.
+CHECK INDEX
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------
+
+
+
+• Varios encabezados.
+
+
+
+
+
+
+---------------------------------------------------------------------
+
+
+
+
+• Una tabla con borde donde se muestre contenido. Debe tener combinación de
+celdas, tanto por filas como por columnas.
+CHECK CARTELERA
+
+
+---------------------------------------------------------------------
+
+
+
+• Varios enlaces, de los cuales uno será a una página de internet, otro a una
+página propia y otro a una zona del mismo documento.
+
+CHECK PAGINA PROPIA-> CARTELERA 
+CHECK PAGINA INTERNET->
+CHECK ZONA DEL MISMO DEL DOC->
+
+
+
+---------------------------------------------------------------------
+
+
+• Una lista ordenada, otra no ordenada y otra de definición
+CHECK OL->
+CHECK UL->
+CHECK DEF->
+
+
+---------------------------------------------------------------------
+
+
+
+• Un formulario que contenga diferentes controles, al menos diez de los siguientes:
+1-
+2-
+3-
+4-
+5-
+6-
+7-
+8-
+9-
+10-
