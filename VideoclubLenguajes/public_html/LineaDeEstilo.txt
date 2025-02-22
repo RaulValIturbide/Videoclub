@@ -1,0 +1,13 @@
+Vamos a seguir un patrón de colores durante todas las páginas para aportar cohesión,
+estos dos colores serán: 
+
+#019BA5 ->Azul Turquesa
+#FAFAFA ->Blanco nieve
+--------------------------
+#01A57A	->Verde Esmeralda	I
+#9BA501 ->Verde Lima
+#D9534F ->Rojo Coral
+#FFAA00 ->Amarillo Mostaza
+
+
+
