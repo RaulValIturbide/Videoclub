@@ -1,0 +1,71 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 23 feb 2025, 12:15:20
+    Author     : baske
+*/
+body{
+    background-color: #019BA5;
+}
+.Encabezado{
+    font-size: 20px;
+    text-align: center;
+}
+/*El imagotipo es la union de el componente grafico y texto de una marca,usaremos este div para gestionar que aparezca en todas las paginas*/
+.imagotipo{
+    display:inline-block;/*Con estos hacemos que el contenedor ocupe solo el espacio "fisico" que realmente ocupa su texto+logo*/
+    position:absolute;/*Con esto podemos decirle al imagotipo donde exactamente queremos que se integre*/
+    right:10px;/*Lo integraremos a la derecha del todo para que se mantenga fijo ahí*/
+}
+/*Manipulamos la tabla para que se ajuste a nuestras preferencias de estilo*/
+.tabla{
+   justify-content: center;
+    width: 750px;/*Un tamaño maximo de ancho de tabla para que no se expanda cuando seleccionamos una pelicula*/
+    background-color: #D9534F;/*El color de fondo siguiendo la linea de estilo*/
+    padding: 10px 20px 20px 20px; /*Espacio para que "respire" la tabla, va en orden: top,right,bottom,left*/
+    margin: auto;/*Para que se centre el texto en la tabla*/
+    display:flex;/*Esto permite que la tabla pueda moverse*/
+    border:2px solid black;/*El borde que rodea la tabla*/
+
+}
+/*Controlamos las filas*/
+.tabla td{
+    padding:10px;/*Espacio entre filas*/
+        
+}
+/*Controlamos el head o encabezado de la tabla*/
+.tabla th{
+    border-bottom:  2px solid black;/*Una linea con objetivo estético*/
+}
+/*Controlamos lo que ocurre cuando el usuario pasa el raton por encima*/
+.tabla tr:hover{
+    font-weight: 700;/*Aumenta a negrita para que el usuario identifique bien la linea que está seleccionando y hacerlo mas intuitivo y práctico*/
+}
+
+#texto_imagotipo{
+    color:black;
+    position:relative;/*Al colocar la posicion en "relative" nos permite modificar la altura del texto*/
+    top:-10px;/*Colocaremos el texto algo más arriba para que quede centrado con el logo (estético)*/
+    display:inline;/*Cambiamos a "inline" para que pueda seguir apareciendo elementos en la misma line y que el titulo de "Cartelera" no se quede muy abajo*/
+}
+#logo_imagotipo{
+    width:40px;/*Anchura*/
+    height: 40px;/*Altura*/
+}
+/*Controla lo que ocurre cuanto se pasa el cursor por encima del logo del imagotipo*/
+#imagotipo_enlace:hover #logo_imagotipo{
+    transform:scale(1.2);/*Amplia el tamaño del logo en un 20%*/
+}
+/*Controla lo que ocurre cuanto se pasa el cursor por encima del texto del imagotipo*/
+#imagotipo_enlace:hover #texto_imagotipo{
+    font-size:20px;/*Amplia el tamaño del texto a 20 px*/
+}
+/*Aqui podemos controlar que cuando se visite el imagotipo no cambie de color ni se vea subrayado*/
+#imagotipo_enlace:visited {
+    text-decoration: none; /* Mantiene el enlace sin subrayado después de visitarlo */
+}
+
+
+

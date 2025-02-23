@@ -22,11 +22,23 @@ a:hover{
     font-weight: 700;/*Pasará a negrita cuando el raton pase por encima*/
     font-family: arial;/*Estilo  al que cambiará el texto cuando pase el raton por encima*/
     color:#FAFAFA;/*Color al que cambiará el texto cuando pase el ratón por encima*/
-    text-decoration: underline;
 }
 a:visited{
     color:#FAFAFA;
     
+}
+/*Selector para controlar los items de la unica lista que hay en la pagina principal*/
+li{
+    padding:5px;/*Espacio de separación entre items */
+    display:inline; /*Convierte el elemento en linea para poder trabajar de manera horizontal*/
+    margin-bottom: 10px;
+}
+img{
+    height: 450px;/*La latura de la imagen*/
+    width: 500px;/*EL ancho de la imagen*/
+    margin-right: 50px; /*El espaciado que deberá haber a la derecha de cada foto*/
+    margin-left: 50px;/*Espacio que habrá al lado izquierdo de cada foto*/
+    border:3px solid white;/*Un borde para decorar las fotos (estético)*/
 }
 .Encabezado{
     text-align: center;
@@ -36,29 +48,39 @@ a:visited{
     border:2px solid black; /*El bordeado del texto con tamaño y color*/
     padding:10px; /*Espacio extra alrededor del texto para dar una mejor impresión estética*/
     margin: auto; /*Centra automaticamente el objeto en el centro de la pantalla*/
-    width: 400px; /*Este sirve para ajustar el tamaño de la lista y que no se extralimite*/
+    margin-bottom: 50px;/*Espacio para que haya separacion entre los elementos*/
+    width: 500px; /*Este sirve para ajustar el tamaño de la lista y que no se extralimite*/
     text-align: center; /*Alinea el texto en el centro de la "caja"*/
     background-color:#D9534F; /*Color de fondo de la la lista*/
 }
-/*Selector para controlar los items de la unica lista que hay en la pagina principal*/
-li{
-    padding:5px;/*Espacio de separación entre items */
-    display:inline; /*Convierte el elemento en linea para poder trabajar de manera horizontal*/
-    margin-bottom: 10px;
+
+.galeria{
+    display:flex;/*Usamos el display:flex para poder modificar el contenedor y poder centrarlo en la pantalla*/
+    justify-content: center;
 }
+
 #Nombre_Empresa{
     position:absolute;
     display:inline;/*Cambiamos el tipo a display para poder colocar al lado el logo de nuestra "empresa"*/
+    font-size: 80px;
+    margin-top: 0px;/*Centrar en el div para que se quede al mismo nivel que el logo*/
 }
 #Bienvenida{
     text-align:center;/*Centra el texto en la pantalla*/
-    padding-bottom: 10px;/*Algo de espacion por abajo para dejar "respirar" el subtitulo(estético)*/
-
+    padding-bottom: 10px;/*Algo de espacio por abajo para dejar "respirar" el subtitulo(estético)*/
 }
 
 /*Selector para controlar la posición del logo*/
+
 #logo{
-    margin-left:300px;
     width:100px;
     height:100px;
+    border:none;/*A pesar de que las img tienen el borde, gracias a la prioridad el logo no tendrá el cuadro blanco que tienen el resto de imagenes a su alrededor*/
+    margin-left:670px;
+}
+.pie{
+    position:absolute;
+    bottom:0;
+    right: 0;
+    margin-right: 10px;
 }
