@@ -3,9 +3,94 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
 */
 /* 
-    Created on : 23 feb 2025, 12:15:20
+    Created on : 21 feb 2025, 16:37:06
     Author     : baske
 */
+/*Aqui colocaremos el color de fondo que queremos que haya en la pagina principal*/
+body{
+    background-color:#019BA5;
+}
+/*En este selector controlaremos los anchor, es decir, los hipervinculos para saltar a otras páginas*/
+a{
+    text-decoration: none;  /* Sin subrayado */
+    color: black;            /* Color inicial */
+}
+/*Este selector cambiara como se comporta el texto cuando el usuario pase el ratón por encima*/
+#Acceso_Blockbuster_index:hover,#Acceso_Cartelera_index:hover,#Acceso_Opinion_index:hover,#Acceso_Resenias_index:hover{
+    transition: 0.3s;/*El tiempo que tardará en cambiar de color y estilo cuando el ratón pase por encima*/
+    font-weight: 700;/*Pasará a negrita cuando el raton pase por encima*/
+    font-family: arial;/*Estilo  al que cambiará el texto cuando pase el raton por encima*/
+    color:#FAFAFA;/*Color al que cambiará el texto cuando pase el ratón por encima*/
+}
+#Acceso_Cartelera_index:visited,#Acceso_Opinion_index:visited,#Acceso_Blockbuster_index:visited,#Acceso_Reseñas_index:visited{
+    color:#FAFAFA;
+}
+/*Selector para controlar los items de la unica lista que hay en la pagina principal*/
+li{
+    padding:5px;/*Espacio de separación entre items */
+    display:inline; /*Convierte el elemento en linea para poder trabajar de manera horizontal*/
+    margin-bottom: 10px;
+}
+#img_pareja,#img_amigos,#img_familia{
+    height: 450px;/*La latura de la imagen*/
+    width: 500px;/*EL ancho de la imagen*/
+    margin-right: 50px; /*El espaciado que deberá haber a la derecha de cada foto*/
+    margin-left: 50px;/*Espacio que habrá al lado izquierdo de cada foto*/
+    border:3px solid white;/*Un borde para decorar las fotos (estético)*/
+}
+.Encabezado_index{
+    text-align: center;
+}
+/*Este selector de clase se usa para gestionar la lista y su contorno*/
+.lista_index{
+    border:2px solid black; /*El bordeado del texto con tamaño y color*/
+    padding:10px; /*Espacio extra alrededor del texto para dar una mejor impresión estética*/
+    margin: auto; /*Centra automaticamente el objeto en el centro de la pantalla*/
+    margin-bottom: 50px;/*Espacio para que haya separacion entre los elementos*/
+    width: 500px; /*Este sirve para ajustar el tamaño de la lista y que no se extralimite*/
+    text-align: center; /*Alinea el texto en el centro de la "caja"*/
+    background-color:#D9534F; /*Color de fondo de la la lista*/
+}
+
+.galeria_index{
+    display:flex;/*Usamos el display:flex para poder modificar el contenedor y poder centrarlo en la pantalla*/
+    justify-content: center;
+}
+
+#Nombre_Empresa{
+    position:absolute;
+    display:inline;/*Cambiamos el tipo a display para poder colocar al lado el logo de nuestra "empresa"*/
+    font-size: 80px;
+    margin-top: 0px;/*Centrar en el div para que se quede al mismo nivel que el logo*/
+}
+#Bienvenida{
+    text-align:center;/*Centra el texto en la pantalla*/
+    padding-bottom: 10px;/*Algo de espacio por abajo para dejar "respirar" el subtitulo(estético)*/
+}
+
+/*Selector para controlar la posición del logo*/
+
+#logo_index{
+    width:100px;
+    height:100px;
+    border:none;/*A pesar de que las img tienen el borde, gracias a la prioridad el logo no tendrá el cuadro blanco que tienen el resto de imagenes a su alrededor*/
+    margin-left:670px;
+}
+.pie_index{
+    position:absolute;
+    bottom:0;
+    right: 0;
+    margin-right: 10px;
+}
+
+
+
+
+/*-----------------------------------------------------------------CARTELERA-----------------------------------------------------------------------------*/
+
+
+
+
 body{
     background-color: #019BA5;
 }
@@ -105,6 +190,7 @@ a{
     padding:10px;
     border:2px solid black;
 }
+
 
 
 
