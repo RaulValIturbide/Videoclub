@@ -19,7 +19,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             </div>
         </a>
         <div class="Encabezado">
-            <h1>CARTELERA</h1>
+            <h1 id="cartelera">CARTELERA</h1>
         </div>
         <div class="tabla">
             <table>
@@ -34,7 +34,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 </thead>
                 <tbody>
                     <tr>
-                        <td>El señor de los Anillos:La comunidad del anillo</td>
+                        <td>El señor de los Anillos</td>
                         <td>Fantasia</td>
                         <td>Lunes 15:30-18:00</td>
                         <td>Sala 3</td>
@@ -42,7 +42,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                     </tr>
                     <tr>
                         <td>Dunkerque</td>
-                        <td>Accion/Militar</td>
+                        <td>Bélico</td>
                         <td>Lunes 15:30-17:00</td>
                         <td>Sala 2</td>
                         <td>5,50 &euro;</td>    
@@ -55,14 +55,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                         <td>3,50 &euro;</td>
                     </tr>
                     <tr>
-                        <td>Pandorum</td>
+                        <td id="peli_semanal">Pandorum</td>
                         <td>Ciencia Ficción</td>
-                        <td>Lunes 17:30-19:00</td>
+                        <td>Viernes 17:30-19:00</td>
                         <td>Sala 2</td>
                         <td>5,50 &euro;</td>
                     </tr>
                     <tr>
-                        <td>El señor de los Anillos:Las dos torres</td>
+                        <td>El señor de los Anillos</td>
                         <td>Fantasia</td>
                         <td>Lunes 18:30-21:00</td>
                         <td>Sala 3</td>
@@ -70,21 +70,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                     </tr>
                     <tr>
                         <td>1917</td>
-                        <td>Accion/Militar</td>
+                        <td>Bélico</td>
                         <td>Lunes 17:30-20:00</td>
                         <td>Sala 1</td>
                         <td>6,50 &euro;</td>
                     </tr>
                     <tr>
-                        <td>El señor de los Anillos:El retorno del rey</td>
+                        <td>El señor de los Anillos</td>
                         <td>Fantasia</td>
                         <td>Lunes 21:30-24:00</td>
                         <td>Sala 3</td>
                         <td>6,50 &euro;</td>
                     </tr>
 
-
-                        <!--Martes-->
 
 
                     <tr>
@@ -97,7 +95,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                     <tr>
                         <td>Sin novedad en el frente</td>
                         <td>Accion/Militar</td>
-                        <td>Martes 15:30-17:00</td>
+                        <td>Jueves 15:30-17:00</td>
                         <td>Sala 2</td>
                         <td>5,50 &euro;</td>    
                     </tr>
@@ -111,28 +109,28 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                     <tr>
                         <td>Elysium</td>
                         <td>Ciencia Ficción</td>
-                        <td>Martes 17:30-19:00</td>
+                        <td>Jueves 17:30-19:00</td>
                         <td>Sala 2</td>
                         <td>5,50 &euro;</td>
                     </tr>
                     <tr>
                         <td>Coraline</td>
                         <td>Fantasia</td>
-                        <td>Martes 18:30-21:00</td>
+                        <td>Viernes 18:30-21:00</td>
                         <td>Sala 3</td>
                         <td>5,50 &euro;</td>
                     </tr>
                     <tr>
                         <td>El pacto</td>
                         <td>Accion/Militar</td>
-                        <td>Martes 17:30-20:00</td>
+                        <td>Sabado 17:30-20:00</td>
                         <td>Sala 1</td>
                         <td>6,50 &euro;</td>
                     </tr>
                     <tr>
                         <td>King Kong</td>
                         <td>Fantasia</td>
-                        <td>Martes 21:30-24:00</td>
+                        <td>Domingo 21:30-24:00</td>
                         <td>Sala 3</td>
                         <td>6,50 &euro;</td>
                     </tr>
@@ -140,7 +138,27 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 
                 </tbody>
             </table>
-            
+
+        </div>
+
+        <div class="blockbuster">
+            <br>
+            <h2>PELICULA DE LA SEMANA</h2>
+            <div class="bienvenida">
+                <p id="parrafo">Como todas las semanas vamos a revelar cual es la peli de esta semana y si conseguis adivinar nuestra pregunta estrella en el
+                    formulario recibir&eacute;is un descuento para el 50&#37; en una pelicula a vuestra elecci&oacute;n</p>
+            </div>
+            <br>
+            <img id="img_pandorum" src="../img/pandorum.jpg" alt="pandorum" style="float: left; margin-right: 20px;width:400px;">
+            <p id="peli_nombre">PANDORUM</p>
+            <br>
+            <p id="peli_datos">As&iacute; es, la aclamada pelicula del director <a href="https://en.wikipedia.org/wiki/Christian_Alvart"> <b> Christian Alvart</b> </a>es la pel&iacute;cula m&aacute;s intrigante que podr&eacute;is encontrar en nuestros cines <br>
+                esta semana, y es que tenemos noticias sorprendentes, varios actores del reparto como <a href="https://en.wikipedia.org/wiki/Dennis_Quaid"><b>Dennis Quaid</b></a> o <a href="https://en.wikipedia.org/wiki/Ben_Foster_(actor)"> <b>Ben Foster</b></a> acudir&aacute;n a <i>Cines Serrano</i><br>
+                para celebrar un <i>Meet and Greet</i> en la proyecci&oacute;n de la pel&iacute;cula.<br><br>
+                Tras el <i>Meet and Greet</i> se dará una fiesta en el recinto municipal por motivo del aniversario de la pel&iacute;cula al que todo el mundo est&aacute; invitado.
+            </p>
+            <br>
+            <p id="volver"><a href="#cartelera">Volver a la Cartelera</a></p>
         </div>
     </body>
 </html>
