@@ -5,11 +5,120 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Opinión</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/icon" href="../favicon/palomitas_favicon.png">
+        <link rel="stylesheet" type="text/css" href="../css/HojaDeEstilo.css">
     </head>
     <body>
-        <div>TODO write content</div>
+        <a id="imagotipo_enlace_cartelera" href="../index.html">
+            <div class="imagotipo_cartelera">
+                <h3 id="texto_imagotipo_cartelera">Cines Serrano</h3>
+                <img id="logo_imagotipo_cartelera" src="../img/logotipo.png" alt="Logotipo">
+            </div>
+        </a>
+        <div class="Encabezado_opinion">
+            <h1>Cuestionario de usuario, tu opinión cuenta</h1>
+        </div>
+        <div class="Formulario_opinion">
+            <form action="procesar.php" method="post">
+                <!-- Caja de texto con longitud máxima y tamaño concreto -->
+                <p><strong>Dinos tu nombre para poder dirigirnos a ti en futuras interacciones (Máx. 50 caracteres)</strong>:</p>
+                <br>
+                <input type="text" id="nombre" name="nombre" maxlength="50" size="40" required>
+                <br>
+                <br>
+                <!-- Caja de texto que permite solo números y se incrementa automáticamente -->
+                <p><strong>Valora tu última estancia con nosotros:</strong></p>
+                <input type="number" id="cantidad" name="cantidad" value="5" step="1" min="1" max="5" required>
+                <span><strong> Estrellas </strong></span>
+                <br>
+                <br>
+                <!-- Cuestionario sobre el cine, con checkboxes -->
+                <p><strong>1. ¿Cada cuanto tiempo frecuenta nuesto cine?</strong></p>
+                <br>
+                <input type="radio" name="frecuencia" value="menos de 1" id="frecuenciamenos1"><label for="frecuenciamenos1"> Menos de 1 vez al mes</label>
+                <input type="radio" name="frecuencia" value="entre 1 y 3" id="frecuencia1"><label for="frecuencia1"> Entre 1 y 3 veces al mes</label>
+                <input type="radio" name="frecuencia" value="entre 3 y 5" id="frecuencia3"> <label for="frecuencia3">Entre 3 y 5 veces al mes</label>
+                <input type="radio" name="frecuencia" value="más de 5" id="frecuencia5"> <label for="frecuencia5">Más de 5 veces al mes</label>
+                <br>
+                <br>
+                <p><strong>2. ¿Utiliza nuestro servicio de barra cuando viene al cine?</strong></p>
+                <input type="radio" name="barra" value="nobarra" id="nobarra"> <label for="nobarra">No </label>
+                <input type="radio" name="barra" value="pocabarra" id="pocabarra"><label for="pocabarra"> Ocasionalmente</label>
+                <input type="radio" name="barra" value="bastantebarra" id="bastantebarra"> <label for="bastantebarra">A menudo</label>
+                <input type="radio" name="barra" value="siemprebarra" id="siemprebarra"> <label for="siemprebarra">Siempre</label>
+                <br>
+                <br>
+                <p><strong>3. ¿Cómo suele adquirir las entradas?</strong></p>
+                <input type="radio" name="entradas" value="melacompran" id="melacompran"> <label for="melacompran">Suele comprar la entrada alguien por mi</label>
+                <input type="radio" name="entradas" value="comproweb" id="comproweb"> <label for="comproweb">Utilizo la página web y la compra online</label>
+                <input type="radio" name="entradas" value="compropantalla" id="compropantalla"> <label for="compropantalla">Utilizo las pantallas interactivas junto a la taquilla</label>
+                <input type="radio" name="entradas" value="comprotaquilla" id="comprotaquilla"> <label for="comprotaquilla"> La compro en taquilla</label>
+                <br>
+                <br>
+                <!--Un desplegable con, al menos, cinco opciones.-->
+                <label for="usoparking"> <strong>4. ¿Utiliza habitualmente nuestro servicio de parking?</strong></label>
+                <br>
+                <select name="usoparking" id="usoparking">
+                    <option> - </option>
+                    <option value="novehiculo">No, no traigo vehículo</option>
+                    <option value="aparcofuera">No, aparco en las inmediaciones</option>
+                    <option value="aparcodentro">Sí, a veces aparco en las instalaciones usando el parking gratuito con la entrada</option>
+                    <option value="aparcosiempre">Sí, siempre</option>
+                    <option value="depende">Depende del día</option>
+                </select>                    
+                <br>
+                <br> 
+                <!-- Un conjunto de elementos tipo checkbox. -->
+                <p><strong>5. ¿Qué tipos de película suele ver? (Marque tantos géneros como le interesen)</strong></p>
+                <br>
+             
+                <div>
+                    <input type="checkbox" name="terror" value="terror" id="terror"> <label for="terror"> Terror</label>
+                    <input type="checkbox" name="cienciaficcion" value="cienciaficcion" id="cienciaficcion"><label for="cienciaficcion"> Ciencia Ficción</label>
+                    <input type="checkbox" name="romance" value="romance" id="romance"><label for="romance"> Romance</label>
+                    <input type="checkbox" name="comedia" value="comedia" id="comedia"> <label for="comedia">Comedia</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="animacion" value="animacion" id="animacion"> <label for="animacion">Animación</label>
+                    <input type="checkbox" name="accion" value="accion" id="accion"><label for="accion"> Acción</label>
+                    <input type="checkbox" name="documental" value="documental" id="documental"> <label for="documental">Documental</label>
+                    <input type="checkbox" name="thriller" value="thriller" id="thriller"><label for="thriller"> Thriller</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="policiaca" value="policiaca" id="policiaca"><label for="policiaca"> Policíaca</label>
+                    <input type="checkbox" name="historica" value="historica" id="historica"><label for="historica"> Histórica</label>
+                    <input type="checkbox" name="musical" value="musical" id="musical"><label for="musical"> Musical</label>
+                    <input type="checkbox" name="drama" value="drama" id="drama"><label for="drama"> Drama</label>
+                </div>
+                <br>
+                <br>
+                <!-- Caja de texto multilínea -->
+                <div>
+                    <label for="sugerencias"><strong>¿Tienes alguna sugerencia? Déjala aquí abajo: </strong></label>
+                    <br>
+                    <br>
+                    <textarea id="sugerencias" name="sugerencias" rows="5" cols="40" required></textarea>
+                </div>
+                <br>
+                <br>
+                <!-- Botón de envío -->
+                <input type="submit" value="Enviar Opinión">
+
+            </form>
+            <br>
+            <footer class="pie_cartelera">
+                <p>Copyright &copy; 2025 Cines Serrano - Todos los derechos reservados</p>
+            </footer>
+
+
+
+            <!-- pruebas --> 
+
+
+
+        </div>
     </body>
 </html>
