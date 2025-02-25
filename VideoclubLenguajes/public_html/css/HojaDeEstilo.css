@@ -22,7 +22,7 @@ a{
     font-family: arial;/*Estilo  al que cambiará el texto cuando pase el raton por encima*/
     color:#FAFAFA;/*Color al que cambiará el texto cuando pase el ratón por encima*/
 }
-#Acceso_Cartelera_index:visited,#Acceso_Opinion_index:visited,#Acceso_Blockbuster_index:visited,#Acceso_Reseñas_index:visited{
+#Acceso_Cartelera_index:visited,#Acceso_Opinion_index:visited,#Acceso_Blockbuster_index:visited,#Acceso_Resenias_index:visited{
     color:#FAFAFA;
 }
 /*Selector para controlar los items de la unica lista que hay en la pagina principal*/
@@ -87,16 +87,6 @@ li{
 
 
 /*-----------------------------------------------------------------CARTELERA-----------------------------------------------------------------------------*/
-
-
-
-
-body{
-    background-color: #019BA5;
-}
-a{
-    text-decoration: none;
-}
 .Encabezado_cartelera{
     font-size: 20px;
     text-align: center;
@@ -183,13 +173,37 @@ a{
     border:2px solid black;
     background-color: #FAFAFA;
 }
-#volver{
+#cuadro_cartelera{
     font-size: 15px;
     display: inline-block;
     background-color: #FAFAFA;
     padding:10px;
     border:2px solid black;
 }
+#cuadro_cartelera:hover{
+
+    font-weight: 700;
+}
+#volver_cartelera{
+    font-size: 15px;
+    display: inline-block;
+    background-color: #FAFAFA;
+    padding:10px;
+    border:2px solid black;
+}
+#volver_cartelera:hover{
+    font-weight: 700;
+}
+#pie_cartelera{
+    display:inline-block;
+}
+
+.pie_cartelera{
+    display:inline-block;
+    position:absolute;
+    right:0;
+    margin-right: 10px;
+    }
 
 
 
@@ -199,3 +213,97 @@ a{
 
 
 /*-----------------------------------------------------------------BLOCKBUSTER-----------------------------------------------------------------------------*/
+
+/*Este div lo usaremos para centrar el encabezado en la pantalla*/
+.Encabezado_div_block{
+    text-align: center;
+}
+/*Aquí personalizaremos nuestro encabezado*/
+#Encabezado_block{
+    font-family: Times New Roman,Arial;
+    display:inline-block;
+    padding:30px; /*Margen para que el texto "respire"*/
+    border: 2px solid black;
+    background-color: #D9534F; /*Fondo del contenedor*/
+
+}
+/*Este contenedor sirve para dividir los 2 contenedores hijas en 2 y que se mantengan en linea*/
+.division_block{
+    display:flex;
+}
+.reparto_block{
+    width: 50%;
+    text-align: center;
+}
+#subEncabezado_reparto_block{
+    display:inline-block;
+    border:2px solid black;
+    padding: 5px 20px 5px 20px;
+    background-color: #D9534F;
+}
+.sinopsis_block{
+    width: 50%;
+    text-align:center;
+}
+#subEncabezado_sinopsis_block{
+    display:inline-block;
+    border:2px solid black;
+    padding: 5px 20px 5px 20px;
+    background-color: #D9534F;
+}
+/*Bloque de texto que da la sinopsis sobre la pelicula*/
+#descripcion_sinopsis_block{
+    font-size: 20px;
+    display:inline-block;
+    text-align:justify;
+    border: 2px solid black;
+    padding:10px;
+    background-color: #FAFAFA ;
+}
+#sub_encabezado_opinion_block{
+    display:inline-block;
+    border:2px solid black;
+    padding: 5px 20px 5px 20px;
+    background-color: #D9534F;
+}
+#descripcion_opinion_block{
+    font-size: 20px;
+    display:inline-block;
+    text-align:justify;
+    border: 2px solid black;
+    padding:10px;
+    background-color: #FAFAFA ;
+}
+/*Contenedor para que los nombres de los actores salgan de izq a derecha*/
+.img_actores_block{
+    text-align: left;
+}
+/*Tamaño de las fotos*/
+.actores_block{
+    width: 100px;
+    height: 100px;
+    border:2px solid white;
+}
+figure{
+    font-weight: 700;
+    font-family: arial;
+    display: inline-block;
+    text-align: center;
+}
+.img_contendor_block{
+    text-align: center;
+}
+#subEncabezado_img_block{
+    display:inline-block;
+    border:2px solid black;
+    background-color: #D9534F;
+    padding:10px;
+}
+.escenas_block{
+    border: 2px solid white;
+    margin: 10px;
+    width: 500px;
+    height: 400px;
+}
+
+
