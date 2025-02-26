@@ -1,11 +1,4 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
-*/
-/* 
-    Created on : 21 feb 2025, 16:37:06
-    Author     : baske
-*/
+/*----------------------------------------------------------------------------General-----------------------------------------------------------------------*/
 /*Aqui colocaremos el color de fondo que queremos que haya en la pagina principal*/
 body{
     background-color:#019BA5;
@@ -15,6 +8,21 @@ a{
     text-decoration: none;  /* Sin subrayado */
     color: black;            /* Color inicial */
 }
+/*Este será el footer que se mantendrá a lo largo de todas las paginas*/
+.pie{
+    display:inline-block;
+    position:absolute;/*Lo usamos para colocarlo a nuestro gusto en la pagina*/
+    right:0; /*Lo colocaremos a la derecha del todo*/
+    margin-right: 10px; /*Le daremos un poco de espacio para que no se quede pegado a la pantalla*/
+    }
+    /*Selector para controlar los items de la unica lista que hay en la pagina principal*/
+li{
+    padding:5px;/*Espacio de separación entre items */
+    display:inline; /*Convierte el elemento en linea para poder trabajar de manera horizontal*/
+    margin-bottom: 10px;
+}
+    
+    /*-------------------------------------------------------------------------------------------Index----------------------------------------------------------------*/
 /*Este selector cambiara como se comporta el texto cuando el usuario pase el ratón por encima*/
 #Acceso_Blockbuster_index:hover,#Acceso_Cartelera_index:hover,#Acceso_Opinion_index:hover,#Acceso_Resenias_index:hover{
     transition: 0.3s;/*El tiempo que tardará en cambiar de color y estilo cuando el ratón pase por encima*/
@@ -25,25 +33,36 @@ a{
 #Acceso_Cartelera_index:visited,#Acceso_Opinion_index:visited,#Acceso_Blockbuster_index:visited,#Acceso_Resenias_index:visited{
     color:#FAFAFA;
 }
-/*Selector para controlar los items de la unica lista que hay en la pagina principal*/
-li{
-    padding:5px;/*Espacio de separación entre items */
-    display:inline; /*Convierte el elemento en linea para poder trabajar de manera horizontal*/
-    margin-bottom: 10px;
-}
+
 #img_pareja,#img_amigos,#img_familia{
-    height: 450px;/*La latura de la imagen*/
-    width: 500px;/*EL ancho de la imagen*/
-    margin-right: 50px; /*El espaciado que deberá haber a la derecha de cada foto*/
-    margin-left: 50px;/*Espacio que habrá al lado izquierdo de cada foto*/
+
+    height: 300px;/*La latura de la imagen*/
+    width: 450px;/*EL ancho de la imagen*/
+    margin-right: 25px; /*El espaciado que deberá haber a la derecha de cada foto*/
+    margin-left: 25px;/*Espacio que habrá al lado izquierdo de cada foto*/
     border:3px solid white;/*Un borde para decorar las fotos (estético)*/
 }
 .Encabezado_index{
     text-align: center;
 }
+.bloque_index {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    height: 150px;/*Tamaño del div*/
+    text-align: center;/*Para que se quede centrado*/
+}
+
+#sub_imagen_index {
+    padding: 10px;
+    background-color: #D9534F;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
 /*Este selector de clase se usa para gestionar la lista y su contorno*/
 .lista_index{
-    border:2px solid black; /*El bordeado del texto con tamaño y color*/
+    border:2px solid white; /*El bordeado del texto con tamaño y color*/
     padding:10px; /*Espacio extra alrededor del texto para dar una mejor impresión estética*/
     margin: auto; /*Centra automaticamente el objeto en el centro de la pantalla*/
     margin-bottom: 50px;/*Espacio para que haya separacion entre los elementos*/
@@ -183,6 +202,7 @@ li{
     background-color: #FAFAFA;
     padding:10px;
     border:2px solid black;
+    border-radius:15px;
 }
 #cuadro_cartelera:hover{
 
@@ -194,6 +214,7 @@ li{
     background-color: #FAFAFA;
     padding:10px;
     border:2px solid black;
+    border-radius:15px; /*Redondea el rectangulo para darle una mejora estética*/
 }
 #volver_cartelera:hover{
     font-weight: 700;
@@ -202,17 +223,13 @@ li{
     display:inline-block;
 }
 
-.pie_cartelera{
-    display:inline-block;
-    position:absolute;
-    right:0;
-    margin-right: 10px;
-    }
+
 
 
 
 
 /*-----------------------------------------------------------------BLOCKBUSTER-----------------------------------------------------------------------------*/
+
 
 
 
