@@ -15,13 +15,15 @@ a{
     right:0; /*Lo colocaremos a la derecha del todo*/
     margin-right: 10px; /*Le daremos un poco de espacio para que no se quede pegado a la pantalla*/
     }
+
     /*Selector para controlar los items de la unica lista que hay en la pagina principal*/
-li{
+    .li_index{
     padding:5px;/*Espacio de separación entre items */
     display:inline; /*Convierte el elemento en linea para poder trabajar de manera horizontal*/
     margin-bottom: 10px;
-}
-    
+    justify-content: center;
+    }
+
     /*-------------------------------------------------------------------------------------------Index----------------------------------------------------------------*/
 /*Este selector cambiara como se comporta el texto cuando el usuario pase el ratón por encima*/
 #Acceso_Blockbuster_index:hover,#Acceso_Cartelera_index:hover,#Acceso_Opinion_index:hover,#Acceso_Resenias_index:hover{
@@ -65,10 +67,13 @@ li{
     border:2px solid white; /*El bordeado del texto con tamaño y color*/
     padding:10px; /*Espacio extra alrededor del texto para dar una mejor impresión estética*/
     margin: auto; /*Centra automaticamente el objeto en el centro de la pantalla*/
-    margin-bottom: 50px;/*Espacio para que haya separacion entre los elementos*/
-    width: 500px; /*Este sirve para ajustar el tamaño de la lista y que no se extralimite*/
+    margin-bottom: 10px;/*Espacio para que haya separacion entre los elementos*/
+    width: 420px; /*Este sirve para ajustar el tamaño de la lista y que no se extralimite*/
     text-align: center; /*Alinea el texto en el centro de la "caja"*/
     background-color:#D9534F; /*Color de fondo de la la lista*/
+    flex-direction: row;
+    display: flex;
+    
     
 }
 
@@ -377,14 +382,12 @@ figure{
     margin-bottom: 0px;
 }
 /*Para que no genere tanto espacio en la parte de arriba del h3(estetico)*/
-#encabezado_azrael{
+#encabezado_azrael #encabezado_Narnia{
     margin:2px;
 }
 dd{
     margin:10px;
 }
-
-
 /*-----------------------------------------------------------------------OPINION----------------------------------------------------------------------------------*/
 .Encabezado_opinion{
     font-size: 20px;
