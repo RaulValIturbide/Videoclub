@@ -349,6 +349,7 @@ figure{
     margin-right:20px;
     width:400px;
 }
+
 .resenia{
     border-radius:10px;
     display:inline-block;
@@ -356,6 +357,7 @@ figure{
     border:2px solid black;
     background-color:#FAFAFA;
 }
+
 .puntuacion{
     transform:scale(0.6);
 }
