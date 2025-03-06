@@ -1,7 +1,8 @@
 /*----------------------------------------------------------------------------General-----------------------------------------------------------------------*/
 /*Aqui colocaremos el color de fondo que queremos que haya en la pagina principal*/
 body{
-    background-color:#019BA5;
+   /* background-color:#019BA5;*/
+   background: linear-gradient(to bottom, #019ba5, #097961)
 }
 /*En este selector controlaremos los anchor, es decir, los hipervinculos para saltar a otras páginas*/
 a{
