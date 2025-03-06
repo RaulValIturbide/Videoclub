@@ -107,7 +107,17 @@ a{
     right: 0;
     margin-right: 10px;
 }
-
+.contenedor_tabla_index{
+    text-align: center;
+}
+.tabla_index{
+    border:2px solid black;
+    border-collapse: collapse;
+    background-color:#D9534F;
+}
+.tablas{
+    border: 2px solid black;
+}
 
 
 
@@ -354,6 +364,7 @@ figure{
     margin-right:20px;
     width:400px;
 }
+
 .resenia{
     border-radius:10px;
     display:inline-block;
@@ -361,6 +372,7 @@ figure{
     border:2px solid black;
     background-color:#FAFAFA;
 }
+
 .puntuacion{
     transform:scale(0.6);
 }

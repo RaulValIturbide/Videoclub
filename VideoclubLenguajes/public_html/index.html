@@ -14,15 +14,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <body>
 
         <div class="Encabezado_index">
-            
+
             <h1 id="Nombre_Empresa">CINES SERRANO</h1>
             <img id="logo_index" src="./img/logotipo.png" alt="Logotipo">
         </div>
-        
+
         <div class="SubEncabezado_index">
             <h2 id="Bienvenida">Bienvenido a la pagina principal de Cines Serrano</h2>
         </div>
-        
+        <!--Una lista ordenada a la que le hemos quitado la numeracion con css y colocado de manera horizontal, tiene interaccion al 
+        pasar por encima(hoover) o al haber clicado en el ateriormente (visited) cambia de estilo (de Times New Roman a Arial) cuando pasamos por encima
+        y se agranda para dar una mejor sensación al usuario del link que está seleccionando-->
         <div>
             <ol class="lista_index">
                 <li class="li_index">
@@ -39,22 +41,48 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 
                 </li>
                 <li class="li_index">
-                    <a id="Acceso_Opinion_index" href="./pagina/Opinion.html">TU OPINIÓN</a>
+                    <a id="Acceso_Opinion_index" href="./pagina/Opinion.html">TU OPINI&Oacute;N</a>
 
                 </li>
 
             </ol>
         </div>
+        <!--Aqui tenemos un contenedor con una serie de imagenes que comparten un tamaño ajustado y centrado -->
         <div class="galeria_index">    
-        <img id="img_pareja" src="./img/index/pareja_index.jpg" alt="pareja">
-        <img id="img_familia" src="./img/index/familia_index.jpg" alt="familia">
-        <img id="img_amigos"  src="./img/index/amigos_index.jpg" alt="amigos">
+            <img id="img_pareja" src="./img/index/pareja_index.jpg" alt="pareja">
+            <img id="img_familia" src="./img/index/familia_index.jpg" alt="familia">
+            <img id="img_amigos"  src="./img/index/amigos_index.jpg" alt="amigos">
         </div>
-         <div class="bloque_index">
+        <div class="bloque_index">
             <h2 id ="sub_imagen_index">Disfrute en pareja, con amigos o en familia</h2>
         </div>
-            <footer class="pie">
-                <p>Copyright &copy; 2025 Cines Serrano - Todos los derechos reservados</p> 
-            </footer>  
+        
+        <!--Esta tabla tiene una combinacion tanto en las filas como en las columnas usando la etiqueta rowspan y colspan-->
+        <div class = "contenedor_tabla_index">
+            <table class="tabla_index">
+                <tr>
+                    <th colspan="2">Informaci&oacute;n General</th>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="tablas">Horario</td>
+                    <td class="tablas">L-V 15:00 a 24:00</td>
+                </tr>
+                <tr>
+                    <td class="tablas">S-D 8:00 a 24:00</td>
+                </tr>
+                <tr>
+                    <td class="tablas">Contacto:</td>
+                    <td class="tablas">CinesSerrano@cinesserrano.com</td>
+                </tr>
+
+            </table>
+        </div>
+        
+        
+        
+        
+    <footer class="pie">
+        <p>Copyright &copy; 2025 Cines Serrano - Todos los derechos reservados</p> 
+    </footer>  
     </body>
 </html>
