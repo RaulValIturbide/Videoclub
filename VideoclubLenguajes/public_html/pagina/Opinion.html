@@ -19,13 +19,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             </div>
         </a>
         <div class="Encabezado_opinion">
-            <h1>Cuestionario de usuario, tu opinión cuenta</h1>
+            <h1 id="titulo_opinion">CUESTIONARIO DE USUARIO: TU OPINIÓN CUENTA</h1>
         </div>
         <div class="Formulario_opinion">
             <form action="destino.html" method="post">
                 <!-- Caja de texto con longitud máxima y tamaño concreto -->
                 <p><strong>Dinos tu nombre para poder dirigirnos a ti en futuras interacciones (Máx. 50 caracteres)</strong>:</p>
-                <br>
                 <input type="text" id="nombre" name="nombre" maxlength="50" size="40" required>
                 <br>
                 <br>
@@ -37,7 +36,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 <br>
                 <!-- Cuestionario sobre el cine, con checkboxes -->
                 <p><strong>1. ¿Cada cuanto tiempo frecuenta nuesto cine?</strong></p>
-                <br>
                 <input type="radio" name="frecuencia" value="menos de 1" id="frecuenciamenos1"><label for="frecuenciamenos1"> Menos de 1 vez al mes</label>
                 <input type="radio" name="frecuencia" value="entre 1 y 3" id="frecuencia1"><label for="frecuencia1"> Entre 1 y 3 veces al mes</label>
                 <input type="radio" name="frecuencia" value="entre 3 y 5" id="frecuencia3"> <label for="frecuencia3">Entre 3 y 5 veces al mes</label>
@@ -52,14 +50,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 <br>
                 <br>
                 <p><strong>3. ¿Cómo suele adquirir las entradas?</strong></p>
-                <input type="radio" name="entradas" value="melacompran" id="melacompran"> <label for="melacompran">Suele comprar la entrada alguien por mi</label>
+                <div>
+                    <input type="radio" name="entradas" value="melacompran" id="melacompran"> <label for="melacompran">Suele comprar la entrada alguien por mi</label>
                 <input type="radio" name="entradas" value="comproweb" id="comproweb"> <label for="comproweb">Utilizo la página web y la compra online</label>
+                </div>
+                <div>
                 <input type="radio" name="entradas" value="compropantalla" id="compropantalla"> <label for="compropantalla">Utilizo las pantallas interactivas junto a la taquilla</label>
                 <input type="radio" name="entradas" value="comprotaquilla" id="comprotaquilla"> <label for="comprotaquilla"> La compro en taquilla</label>
+                </div>
                 <br>
                 <br>
                 <!--Un desplegable con, al menos, cinco opciones.-->
                 <label for="usoparking"> <strong>4. ¿Utiliza habitualmente nuestro servicio de parking?</strong></label>
+                <br>
                 <br>
                 <select name="usoparking" id="usoparking">
                     <option> - </option>
@@ -73,27 +76,50 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 <br> 
                 <!-- Un conjunto de elementos tipo checkbox. -->
                 <p><strong>5. ¿Qué tipos de película suele ver? (Marque tantos géneros como le interesen)</strong></p>
-                <br>
-             
-                <div>
+              
+                <div class="checkbox-container">
                     <input type="checkbox" name="terror" value="terror" id="terror"> <label for="terror"> Terror</label>
                     <input type="checkbox" name="cienciaficcion" value="cienciaficcion" id="cienciaficcion"><label for="cienciaficcion"> Ciencia Ficción</label>
                     <input type="checkbox" name="romance" value="romance" id="romance"><label for="romance"> Romance</label>
                     <input type="checkbox" name="comedia" value="comedia" id="comedia"> <label for="comedia">Comedia</label>
                 </div>
-                <div>
+                <div class="checkbox-container">
                     <input type="checkbox" name="animacion" value="animacion" id="animacion"> <label for="animacion">Animación</label>
                     <input type="checkbox" name="accion" value="accion" id="accion"><label for="accion"> Acción</label>
                     <input type="checkbox" name="documental" value="documental" id="documental"> <label for="documental">Documental</label>
                     <input type="checkbox" name="thriller" value="thriller" id="thriller"><label for="thriller"> Thriller</label>
                 </div>
-                <div>
+                <div class="checkbox-container">
                     <input type="checkbox" name="policiaca" value="policiaca" id="policiaca"><label for="policiaca"> Policíaca</label>
                     <input type="checkbox" name="historica" value="historica" id="historica"><label for="historica"> Histórica</label>
                     <input type="checkbox" name="musical" value="musical" id="musical"><label for="musical"> Musical</label>
                     <input type="checkbox" name="drama" value="drama" id="drama"><label for="drama"> Drama</label>
                 </div>
                 <br>
+                <br>
+                <!-- Selector de fecha y hora -->
+                <div>
+                    <label for="ultimavisita"><b>6. ¿Cuando viste la última pelicula en nuestras salas?:</b></label>
+                    <br>
+                    <br>
+                    <input type="datetime-local" id="ultimavisita" name="ultimavisita"> 
+                </div>
+                <br>
+                <!-- Selector de hora -->
+                <div>
+                    <label for="horafavorita"><b>7. ¿A qué hora suele preferir la sesion?:</b></label>
+                    <br>
+                    <br>
+                    <input type="time" id="horafavorita" name="horafavorita"> 
+                </div>
+                <br>
+                <!-- Selector de color -->
+                <div>
+                    <label for="colorpulsera"><b>¡Entre los participantes de la encuesta se sorteará una pulsera, dinos tu color favorito!:</b></label>
+                                <br>
+                                <br>
+                    <input type="color" id="colorpulsera" name="colorpulsera" value="#ff0000"> 
+                </div>
                 <br>
                 <!-- Caja de texto multilínea -->
                 <div>
@@ -109,16 +135,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 
             </form>
             <br>
-            <footer class="pie">
+           
+          
+            <!-- pruebas --> 
+        </div>
+         <footer class="pie">
                 <p>Copyright &copy; 2025 Cines Serrano - Todos los derechos reservados</p>
             </footer>
-
-
-
-            <!-- pruebas --> 
-
-
-
-        </div>
     </body>
 </html>
