@@ -1,7 +1,8 @@
 /*----------------------------------------------------------------------------General-----------------------------------------------------------------------*/
 /*Aqui colocaremos el color de fondo que queremos que haya en la pagina principal*/
 body{
-    background-color:#019BA5;
+    /* background-color:#019BA5;*/
+    background: linear-gradient(to bottom, #019ba5, #097961)
 }
 /*En este selector controlaremos los anchor, es decir, los hipervinculos para saltar a otras páginas*/
 a{
@@ -14,6 +15,17 @@ a{
     position:absolute;/*Lo usamos para colocarlo a nuestro gusto en la pagina*/
     right:0; /*Lo colocaremos a la derecha del todo*/
     margin-right: 10px; /*Le daremos un poco de espacio para que no se quede pegado a la pantalla*/
+
+}
+/*Selector para controlar los items de la unica lista que hay en la pagina principal*/
+li{
+    padding:5px;/*Espacio de separación entre items */
+    display:inline; /*Convierte el elemento en linea para poder trabajar de manera horizontal*/
+    margin-bottom: 10px;
+}
+
+/*-------------------------------------------------------------------------------------------Index----------------------------------------------------------------*/
+
     }
 
     /*Selector para controlar los items de la unica lista que hay en la pagina principal*/
@@ -25,6 +37,7 @@ a{
     }
 
     /*-------------------------------------------------------------------------------------------Index----------------------------------------------------------------*/
+
 /*Este selector cambiara como se comporta el texto cuando el usuario pase el ratón por encima*/
 #Acceso_Blockbuster_index:hover,#Acceso_Cartelera_index:hover,#Acceso_Opinion_index:hover,#Acceso_Resenias_index:hover{
     transition: 0.3s;/*El tiempo que tardará en cambiar de color y estilo cuando el ratón pase por encima*/
@@ -71,10 +84,14 @@ a{
     width: 420px; /*Este sirve para ajustar el tamaño de la lista y que no se extralimite*/
     text-align: center; /*Alinea el texto en el centro de la "caja"*/
     background-color:#D9534F; /*Color de fondo de la la lista*/
+
+
+
     flex-direction: row;
     display: flex;
     
     
+
 }
 
 .galeria_index{
@@ -152,7 +169,7 @@ a{
 .tabla_cartelera td{
     padding:10px;/*Espacio entre filas*/
     width: 200px;
-        
+
 }
 /*Controlamos el head o encabezado de la tabla*/
 .tabla_cartelera th{
@@ -173,7 +190,7 @@ a{
 #img_pandorum_cartelera{
     border:2px solid white;
     height: 500px;
-    float: left; 
+    float: left;
     margin-right:20px;
     width:400px;
 }
@@ -360,7 +377,7 @@ figure{
 .img_resenias{
     border:2px solid white;
     height: 400px;
-    float: left; 
+    float: left;
     margin-right:20px;
     width:400px;
 }
@@ -401,12 +418,50 @@ dd{
     margin:10px;
 }
 /*-----------------------------------------------------------------------OPINION----------------------------------------------------------------------------------*/
-.Encabezado_opinion{
+.Encabezado_opinion{ /*Encabezado en fondo verde de la página de opinión*/
     font-size: 20px;
     text-align: center;
+    margin-bottom: 60px;
 }
-.Formulario_opinion{
+.Formulario_opinion{ /*"Caja en fondo azul que contiene todas las preguntas del formulario"*/
     justify-content: center;
+    border: 2px solid black; /*redondea essquinas*/
+    border-radius: 25px;
+    padding-left: 80px; /*Ajustes de posición*/
+    padding-top: 20px;
+    padding-bottom: 30px;
     text-align: left;
-    margin-left: 30px;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-right: 150px;
+    background: rgb(97,253,244);
+background: radial-gradient(circle, rgba(97,253,244,1) 0%, rgba(66,197,246,1) 49%, rgba(46,79,248,1) 100%); 
+    
+}
+
+#titulo_opinion{
+    display:inline-block;
+    border: 2px solid black;
+    background-color: #44ff95;
+    padding: 5px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+ 
+.checkbox-container input[type="checkbox"] {
+  vertical-align: middle;
+}
+ 
+.checkbox-container label {
+  display: inline-block;
+  white-space: nowrap;
+}
+#cienciaficcion{
+    margin-left: 60px
+}
+#accion{
+    margin-left: 21px
 }
